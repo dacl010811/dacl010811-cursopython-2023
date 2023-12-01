@@ -11,7 +11,9 @@ def ingreso_datos_usuario():
     limite = int(input("Ingresa el limite que deseas!! \n"))
     datos.append(limite)
     
-    return datos     # datos = [numero_tabla, limite]
+    return numero_tabla, limite
+    
+    #return datos     # datos = [numero_tabla, limite]
                              #        [0]       [1]
    
 def  tablas_multiplicacion (numero_tabla, limite=13 ):
