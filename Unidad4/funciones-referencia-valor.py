@@ -13,9 +13,9 @@ resultado = suma(15,25)
 # diccionarios por una direccion en la memoria: 0x078AB ---> [1,2,3]
 
 def multiplos_100(lista_numeros):
-    for i,v in enumerate(lista_numeros):
-        print(i,"-",v)
-        lista_numeros [i] = v * 100
+    for index,valor in enumerate(lista_numeros):
+        print(index,"-",valor)
+        lista_numeros [index] = valor * 100
                 
 lista_numeros = [2,4,6]  # Listas, Tuplas, Diccionarios, Pilas y Colas
                # 0 1 2
