@@ -64,4 +64,5 @@ print(f"Lista final {lista1} ")
 
 
 lista2 = [1,3,5,7,9,0]  #  [0,9,7,5,3,1]
-print(f"Lista final reverse : {lista2.reverse()}")
+lista2.reverse()
+print(f"Lista final reverse : {lista2}")
