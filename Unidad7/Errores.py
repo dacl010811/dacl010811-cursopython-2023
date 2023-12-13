@@ -81,8 +81,8 @@ def presentarMensaje(mensaje=None):
         print(f"LLamado por raise: {type(ve).__name__}")
     except TypeError as ve:
         print(f"LLamado por raise: {type(ve).__name__}")
-    except:
-        print(f"Error General")
+    except BaseException as be:
+        print(f"Error General {type(be).__name__}")
     else:
         print(f"El flujo fue normal, sin excepciones!!!")
     finally:
