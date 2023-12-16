@@ -4,9 +4,16 @@
 class Persona():
     contador_personas = 0
     
-    def __init__(self,cedula,nombre, apellido,celular,direccion):
-        self.cedula = cedula
-        self.nombre = nombre
+    def __init__(self,cedula,nombre,apellido=None,celular=None,direccion=None):
+        if len(cedula) > 10 and len(nombre) > 4:            
+            try:
+                self.cedula = cedula
+                self.nombre = nombre
+            except Exception as er:
+                print("")
+        else:
+            print("Datos Invalidos!!")
+        
         self.apellido = apellido
         self.celular = celular
         self.direccion = direccion
@@ -177,4 +184,11 @@ zoologico_aventura.agregar_area(zona_aves)
 zoologico_aventura.agregar_area(zona_reptiles)
 
 
+# Parametros por defecto en el Constructor de Clase
+
+persona_1 = Persona("1102587418","Darwin","Apellido","0565656565","direccion")
+print(persona_1)
+
+persona_2 = Persona("1252588524","Abcde")
+print(persona_2)
 
