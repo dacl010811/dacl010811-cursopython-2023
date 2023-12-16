@@ -49,7 +49,10 @@ class Animal():
         self.especie = especie
         self.edad = edad
         self.region = region
-        
+    
+    def __str__(self) -> str:
+        pass
+    
     def comer(self):
         print("Estoy comiendo: Clase Aminal")
         
