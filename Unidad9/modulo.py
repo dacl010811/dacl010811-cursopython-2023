@@ -135,7 +135,7 @@ perro = Mamifero("Dog","Perro",5,"Suiza","Suave","Negro")
 aguila = Ave("Aguila Real","Aguila",3,"Sierra","Cafe")
 condor = Ave("Condor Sierra","Condor",10,"Sierra","Negro")
 
-serpiente = Reptil("Boa","Serpiente",10,"Amazonia")
+serpiente = Reptil("Boa","Serpiente",10,"Amazonia","escamas")
 
 #Areas del Zoologico
 zona_maniferos = AreaZoologico("Aminales Mamiferos",5)
