@@ -51,8 +51,8 @@ class Animal():
         self.region = region
     
     def __str__(self) -> str:
-        pass
-    
+        return "A:[ {0}, {1}, {2}, {3} ]".format(self.nombre, self.especie,self.edad,self.region)
+           
     def comer(self):
         print("Estoy comiendo: Clase Aminal")
         
@@ -65,6 +65,9 @@ class Mamifero(Animal):
         super().__init__( nombre,especie,edad,region)
         self.pelaje = pelaje
         self.color = color
+    
+    def __str__(self) -> str:
+        return "[Soy un Mamifero: {0} {1}]".format(self.pelaje,self.color)
     
     def amamantar(self):
         print("Estoy amamantando a las crias")
@@ -81,6 +84,9 @@ class Ave(Animal):
     def __init__(self, nombre,especie,edad,region,color):
         super().__init__( nombre,especie,edad,region)        
         self.color = color
+     
+    def __str__(self) -> str:
+        return "[Soy un Ave: {0}]".format(self.color) 
         
     def volar(self):
         print ("Estoy volando, soy una Ave")
@@ -91,6 +97,9 @@ class Reptil(Animal):
     def __init__(self, nombre,especie,edad,region,tipo_piel):
         super().__init__( nombre,especie,edad,region)        
         self.tipo_piel = tipo_piel
+        
+    def __str__(self) -> str:       
+        return "[Soy un reptil: {0} {1}]".format(super().__str__(),self.tipo_piel)
     
     def arrastrarse(self):
         print("Estoy arrastrandome")
@@ -101,6 +110,9 @@ class Anfibio(Animal):
     def __init__(self, nombre,especie,edad,region,tipo_anfibio):
         super().__init__( nombre,especie,edad,region)        
         self.tipo_anfibio = tipo_anfibio
+        
+    def __str__(self) -> str:
+        return "[Soy un Anfibio: {0} {1} ]".format(super().__str__(),self.tipo_anfibio)
 
 
 class AreaZoologico():
@@ -135,10 +147,16 @@ class Zoologico():
 leon = Mamifero("Simba","Leon",5,"Africa","Suave","Cafe")
 perro = Mamifero("Dog","Perro",5,"Suiza","Suave","Negro")
 
+print("-----------------------------------------------")
+
 aguila = Ave("Aguila Real","Aguila",3,"Sierra","Cafe")
 condor = Ave("Condor Sierra","Condor",10,"Sierra","Negro")
 
+print("-----------------------------------------------")
+
 serpiente = Reptil("Boa","Serpiente",10,"Amazonia","escamas")
+
+print("-----------------------------------------------")
 
 #Areas del Zoologico
 zona_maniferos = AreaZoologico("Aminales Mamiferos",5)
