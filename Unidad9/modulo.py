@@ -5,15 +5,9 @@ class Persona():
     contador_personas = 0
     
     def __init__(self,cedula,nombre,apellido=None,celular=None,direccion=None):
-        if len(cedula) > 10 and len(nombre) > 4:            
-            try:
-                self.cedula = cedula
-                self.nombre = nombre
-            except Exception as er:
-                print("")
-        else:
-            print("Datos Invalidos!!")
         
+        self.cedula = cedula
+        self.nombre = nombre
         self.apellido = apellido
         self.celular = celular
         self.direccion = direccion
@@ -192,3 +186,19 @@ print(persona_1)
 persona_2 = Persona("1252588524","Abcde")
 print(persona_2)
 
+
+#Atributos Dinamicos en python y POO
+
+print("Persona Atributos dinamicos")
+
+persona_3 = Persona("1102587418","Darwin")
+
+persona_3.fecha_nacimiento = "01/02/2020"
+persona_3.raza = "Mestizo"
+persona_3.color = "Cafe"
+persona_3.pais = "Ecuador"
+
+print(persona_3)
+print(persona_3.fecha_nacimiento)
+print(persona_3.raza)
+print(persona_3.pais)
