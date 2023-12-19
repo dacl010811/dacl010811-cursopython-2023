@@ -12,8 +12,8 @@ class Persona():
         self.celular = celular
         self.direccion = direccion
     
-    def __str__(self) -> str:
-        return "Persona [ {0} - {1} - {2} ]".format(self.cedula,self.nombre,self.apellido)
+    def __str__(self) -> str:        
+        return "Persona [ {} - {} - {} ]".format(self.cedula,self.nombre,self.apellido)
     
     def saludar(self):
         print("Hola, buenos dias")
