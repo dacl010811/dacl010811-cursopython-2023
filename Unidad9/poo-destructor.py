@@ -43,10 +43,45 @@ class Catalogo:
             catalogo_accion += p.nombre + " - "
         return catalogo_accion
 
-catalogo_accion = Catalogo([Pelicula("La Momia 1",120,"2000"),Pelicula("La Momia 2",160,"2005")])
-catalogo_accion.agregar(Pelicula("Thor 1",180,"2008"))
-catalogo_accion.agregar(Pelicula("El hombre Aranna ",220,"2006"))
+#catalogo_accion = Catalogo([Pelicula("La Momia 1",120,"2000"),Pelicula("La Momia 2",160,"2005")])
+#catalogo_accion.agregar(Pelicula("Thor 1",180,"2008"))
+#catalogo_accion.agregar(Pelicula("El hombre Aranna ",220,"2006"))
 
-print(catalogo_accion)
+#print(catalogo_accion)
+
+
+class Automovil():
+    
+    __kilometraje = 0
+    
+    def __init__(self,marca,tipo,color,precio=None,pais=None) -> None:
+        self.marca = marca
+        self.tipo = tipo
+        self.color = color
+        self.precio = precio
+        self.pais = pais
+    
+    def  __reset_kilometraje_fabrica(self):
+        __kilometraje = 0
+        
+    # IMplementacion de un metodo get() y set()--  JAVA
+    def retorno_kilometraje(self):
+        return self.__kilometraje
+    
+    def fijar_kilometraje(self,kilometraje):
+        self.__kilometraje = kilometraje
+    
+      
+    
+automovil_1 = Automovil("Chevrolet", "SUV","Negro")
+automovil_1.fijar_kilometraje(200)
+print(f"K: {automovil_1.retorno_kilometraje()}")
+
+
+automovil_2 = Automovil("KIA", "SOLTS","Gris")
+print(f"K: {automovil_2.retorno_kilometraje()}")
+    
+    
+
 
 
