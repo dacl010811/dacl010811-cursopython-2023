@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: mi-paquete
+Version: 0.1
+Summary: Una descripción corta de tu paquete
+Author: Darwin Calle
+Author-email: tu@email.com
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
